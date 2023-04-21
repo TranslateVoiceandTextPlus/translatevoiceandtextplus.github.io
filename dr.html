@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Deleting Translate Voice and Text Plus User Data</title>
+    <style>
+      body {
+        background-color: black;
+        overflow: hidden;
+      }
+      
+      #header {
+        text-align: center;
+        color: white;
+        font-size: 32px;
+        margin-top: 50px;
+      }
+      
+      #instructions {
+        color: white;
+        font-size: 24px;
+        margin-top: 50px;
+        margin-left: 80px;
+        margin-right: 80px;
+      }
+      
+      #form {
+        margin-top: 50px;
+        margin-left: 500px;
+        margin-right: 500px;
+      }
+      
+      input[type="email"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 4px;
+        background-color: #f2f2f2;
+      }
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      
+      #footer {
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        margin-top: 50px;
+      }
+      
+      #fireworks {
+        position: absolute;
+        width: 10%;
+        height: 10%;
+        z-index: -1;
+      }
+      
+      .firework {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 10%;
+        background-color: #F012BE;
+        animation: fireworks 1s ease-in-out infinite;
+      }
+      
+      .firework:nth-child(2n) {
+        background-color: #3D9970;
+        animation-delay: 0.5s;
+      }
+      
+      @keyframes fireworks {
+        0% {
+          background-color: #F012BE;
+          transform: translateY(0);
+        }
+        10% {
+          background-color: #FF4136;
+          transform: translateY(-50px);
+        }
+        20% {
+          background-color: #FF851B;
+          transform: translateY(-100px);
+        }
+        30% {
+          background-color: #FFDC00;
+          transform: translateY(-150px);
+        }
+        40% {
+          background-color: #01FF70;
+          transform: translateY(-200px);
+        }
+        50% {
+          background-color: #3D9970;
+          transform: translateY(-250px);
+        }
+        60% {
+          background-color: #39CCCC;
+          transform: translateY(-300px);
+        }
+        70% {
+          background-color: #7FDBFF;
+          transform: translateY(-350px);
+        }
+        80% {
+          background-color: #B10DC9;
+          transform: translateY(-400px);
+        }
+        90% {
+          background-color: #85144b;
+      transform: translateY(-450px);
+    }
+    100% {
+      background-color: #F012BE;
+      transform: translateY(-500px);
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div id="header">
+     Deleting Translate Voice and Text Plus User Data
+    </div>
+    <div id="instructions">
+      To remove your data from the application, enter your email below. Please note that this will delete all data associated with the application, including profile, payment information, and purchase history. It will be impossible to undo this action.    </div>
+    <div id="form">
+      <form>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <input type="submit" value="Delete data">
+      </form>
+    </div>
+    <div id="footer">
+      &copy; 2023 All rights reserved.
+    </div>
+    <div id="fireworks">
+      <div class="firework"></div>
+      <div class="firework"></div>
+      <div class="firework"></div>
+      <div class="firework"></div>
+      <div class="firework"></div>
+      <div class="firework"></div>
+      <div class="firework"></div>
+      <div class="firework"></div>
+    </div>
+  </body>
+</html>
